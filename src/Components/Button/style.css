@@ -1,0 +1,12 @@
+.btn { width: 50%; border: 0; padding: .25rem .5rem; font-size: .875rem; line-height: 1.5; border-radius: .2rem; white-space: nowrap; vertical-align: middle; color: #fff; cursor: pointer; }
+.btn:not(:last-child) { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.btn:not(:first-child) { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.btn.blue { background-color: #007bff; border-color: #007bff; }
+.btn.blue:hover:not(:disabled) { background-color: #027de7; border-color: #0062cc; }
+.btn.green { background-color: #28a745; border-color: #28a745; }
+.btn.green:hover:not(:disabled) { background-color: #218838; border-color: #1e7e34;}
+.btn.red { background-color: #dc3545; border-color: #dc3545; }
+.btn.red:hover:not(:disabled) { background-color: #c82333; border-color: #bd2130;}
+
+.btn:disabled { opacity: .65; cursor: default; }
