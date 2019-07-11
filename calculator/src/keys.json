@@ -1,0 +1,107 @@
+[
+    [
+        {
+            "value": "AC",
+            "function": "function",
+            "cell": 1
+        },
+        {
+            "value": "+/-",
+            "function": "function",
+            "cell": 1
+        },
+        {
+            "value": "%",
+            "function": "function",
+            "cell": 1
+        },
+        {
+            "value": ":",
+            "function": "operator",
+            "cell": 1
+        }
+    ],
+    [
+        {
+            "value": "7",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "8",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "9",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "x",
+            "function": "operator",
+            "cell": 1
+        }
+    ],
+    [
+        {
+            "value": "4",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "5",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "6",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "-",
+            "function": "operator",
+            "cell": 1
+        }
+    ],
+    [
+        {
+            "value": "1",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "2",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "3",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "+",
+            "function": "operator",
+            "cell": 1
+        }
+    ],
+    [
+        {
+            "value": "0",
+            "function": "digit",
+            "cell": 2
+        },
+        {
+            "value": ".",
+            "function": "digit",
+            "cell": 1
+        },
+        {
+            "value": "=",
+            "function": "operator",
+            "cell": 1
+        }
+    ]
+]
