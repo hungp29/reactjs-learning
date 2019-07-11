@@ -24,7 +24,7 @@ class App extends Component {
             <Row className={'row-' + index} type="flex" key={index}>
               {row.map((key, index) => (
                 <Col key={index} span={6 * key.cell}>
-                  <Key type={key.function} value={key.value}
+                  <Key type={key.type} value={key.value}
                     onClickHandle={this.onClickKeyHandle} />
                 </Col>
               ))}
@@ -36,8 +36,8 @@ class App extends Component {
     );
   }
 
-  onClickKeyHandle = (value) => {
-    this.setState({keyValue: value});
+  onClickKeyHandle = (key) => {
+    this.setState({ keyValue: key });
   }
 }
 

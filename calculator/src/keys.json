@@ -2,105 +2,105 @@
     [
         {
             "value": "AC",
-            "function": "function",
+            "type": "function",
             "cell": 1
         },
         {
             "value": "+/-",
-            "function": "function",
+            "type": "function",
             "cell": 1
         },
         {
             "value": "%",
-            "function": "function",
+            "type": "function",
             "cell": 1
         },
         {
             "value": ":",
-            "function": "operator",
+            "type": "operator",
             "cell": 1
         }
     ],
     [
         {
             "value": "7",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "8",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "9",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "x",
-            "function": "operator",
+            "type": "operator",
             "cell": 1
         }
     ],
     [
         {
             "value": "4",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "5",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "6",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "-",
-            "function": "operator",
+            "type": "operator",
             "cell": 1
         }
     ],
     [
         {
             "value": "1",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "2",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "3",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "+",
-            "function": "operator",
+            "type": "operator",
             "cell": 1
         }
     ],
     [
         {
             "value": "0",
-            "function": "digit",
+            "type": "digit",
             "cell": 2
         },
         {
             "value": ".",
-            "function": "digit",
+            "type": "digit",
             "cell": 1
         },
         {
             "value": "=",
-            "function": "operator",
+            "type": "operator",
             "cell": 1
         }
     ]
