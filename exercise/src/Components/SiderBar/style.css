@@ -1,0 +1,9 @@
+.siderbar {
+  height: 100vh;
+  border-right: 1px solid #eaeeef;
+}
+.siderbar .preview-content {
+  height:calc(100% - 80px);
+  overflow:auto;
+  background: #ffffff;
+}

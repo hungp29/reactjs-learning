@@ -1,0 +1,68 @@
+.post-preview {
+  /* font-size: 12px; */
+  border: 0;
+  border-bottom: 2px solid #eaeeef;
+  border-radius: 0;
+}
+.post-preview.selected {
+  background: #7bc3d1;
+}
+
+.post-preview .ant-card-body {
+  padding: 20px;
+  height: 105px;
+  overflow: hidden;
+}
+
+.post-preview .post-title {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-preview.selected .post-title {
+  color: #ffffff;
+}
+.post-preview .post-title .title {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 15px;
+}
+
+.post-preview .post-title .info {
+  font-size: 11px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.post-preview .post-title .info span:not(:last-child) {
+  margin-right: 5px;
+}
+
+.post-preview .post-title .info .like {
+  color: #d44a49;
+}
+.post-preview.selected .post-title .info .like {
+  color: #ffffff;
+}
+
+.post-preview .post-title .info .unread {
+  color: #6cc388;
+  font-size: 9px;
+}
+.post-preview .post-title .info .time {
+  color: #9fadb4;
+}
+.post-preview.selected .post-title .info .time {
+  color: #ffffff;
+}
+.post-preview .post-content {
+  margin: 0;
+}
+.post-preview.selected .post-content {
+  color: #ffffff;
+}

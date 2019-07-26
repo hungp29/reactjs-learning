@@ -1,0 +1,27 @@
+.app {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #323b3d;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.flex-center {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.flex-middle-left {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-middle-right {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+}

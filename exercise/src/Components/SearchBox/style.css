@@ -1,0 +1,16 @@
+.search-box {
+  height: 80px;
+  background: #d3dadd;
+  padding: 0 20px;
+}
+.search-box .search-input .ant-input {
+  padding-right: 11px;
+  padding-left: 32px;
+  border-radius: 50px;
+  height: 35px;
+}
+.search-box .search-input .ant-input-suffix {
+  left: 12px;
+  right: auto;
+  font-size: 16px;
+}

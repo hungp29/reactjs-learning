@@ -1,0 +1,44 @@
+.main-content {
+  height: 100vh;
+  padding: 0 40px;
+  background: #ffffff;
+}
+
+
+
+.circle-btn, .circle-btn:hover {
+  background: none;
+  color: #1f2a2f;
+  border: 2px solid #1f2a2f;
+  width: 27px;
+    height: 27px;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+.circle-btn .icon {
+  /* vertical-align: middle; */
+}
+
+.header-content .circle-btn.like {
+  color: #d44a49;
+  border: 2px solid #d44a49;
+}
+
+.left-btn .circle-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header-content .page {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.header-content .circle-btn.prev {
+  margin-right: 10px;
+}
+.header-content .title {
+  font-size: 31px;
+    font-weight: 700;
+    padding: 17px 0;
+    display: inline-block;
+}
