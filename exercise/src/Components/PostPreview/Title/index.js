@@ -6,7 +6,6 @@ import '../style.css'
 
 export default class PostTitle extends Component {
   render () {
-    console.log('Post title')
     return (
       <div className='post-title'>
         <span className='title'>Title Title Title Title Title Title Title Title Title Title</span>

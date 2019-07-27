@@ -15,7 +15,6 @@ export default class HeaderUser extends Component {
   }
 
   render () {
-    console.log('Header User')
     return (
       <PageHeader className='header-user'>
         <Row type='flex' justify='space-between' align='middle'>

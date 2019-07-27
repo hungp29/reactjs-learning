@@ -14,11 +14,6 @@ export default class MainContent extends Component {
   constructor(props) {
     super(props)
     this.state = {}
-
-    if (this.props.location && this.props.location.pathname && this.props.location.pathname !== ROUTES.users) {
-      this.state.renderHeaderContent = true
-    }
-
   }
 
   renderHeaderByRouteRequest() {
@@ -33,14 +28,13 @@ export default class MainContent extends Component {
   renderContentByRouteRequest() {
     switch (this.props.match.path) {
       case ROUTES.user:
-        return <ContentUser />
+        return <ContentUser match={this.props.match} />
       default:
         return null
     }
   }
 
   render() {
-    console.log('main content', this.state.renderHeaderContent)
     return (
       <Layout className='main-content'>
         {this.renderHeaderByRouteRequest()}

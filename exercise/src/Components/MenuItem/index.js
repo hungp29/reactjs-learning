@@ -7,7 +7,6 @@ import './style.scss'
 export default class MenuItem extends Component {
   render () {
     const { title, icon, count, linkTo, ...other } = this.props
-    console.log('Menu item ', linkTo)
 
     return (
       <Menu.Item {...other} className='menu-item flex-center' title={title}>

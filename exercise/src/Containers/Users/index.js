@@ -13,13 +13,12 @@ class Users extends Component {
   }
 
   render () {
-    console.log('current props', this.props)
     return (
       // <Layout>
       //   <NavBar />
         <Layout style={{ marginLeft: this.props.navbar.collapsed ? this.props.navbar.collapsedWidth : this.props.navbar.width }}>
-          <SiderBar {...this.props} />
-          <MainContent {...this.props} />
+          <SiderBar match={this.props.match} history={this.props.history} />
+          <MainContent match={this.props.match} />
           {/* <UserContent /> */}
         </Layout>
       // </Layout>
@@ -31,7 +30,7 @@ const mapStateToProps = (state) => {
   return {
     navbar: state.app.navbar,
     status: state.users.status,
-    data: state.users.data,
+    // users: state.users.users,
     error: state.users.error
   }
 }

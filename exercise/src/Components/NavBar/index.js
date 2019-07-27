@@ -23,7 +23,6 @@ class NavBar extends Component {
   }
 
   render () {
-    console.log('navbar')
     return (
       <Sider
         className='navbar'

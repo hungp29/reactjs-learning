@@ -15,7 +15,6 @@ export default class PostPreview extends Component {
   }
 
   render () {
-    console.log('Post preview')
     return (
       <Card className={'post-preview' + (!this.props.selected ? '' : ' selected')} hoverable>
         <Skeleton loading={this.state.loading} active>

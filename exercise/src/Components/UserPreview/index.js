@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import UserPreviewTitle from './UserPreviewTitle';
 import UserPreviewDesc from './UserPreviewDesc';
-import { actionSelectUser } from '../../Actions/users';
+// import { actionSelectUser } from '../../Actions/users';
 import './style.scss'
 import { ROUTES, SLASH } from '../../Constants';
 
@@ -21,7 +21,6 @@ class UserPreview extends Component {
 
   render() {
     const { user, match } = this.props
-    console.log('User preview', match)
     return (
       <Card className={'user-preview' + (match && match.params && match.params.id === user.id ? ' selected' : '')} hoverable onClick={this.handleClick}>
         <Skeleton loading={this.state.loading} active>
@@ -36,7 +35,6 @@ class UserPreview extends Component {
   }
 
   handleClick = () => {
-    console.log('click ', this.props.user.id)
     this.props.history.push(ROUTES.users + SLASH + this.props.user.id)
   }
 }
@@ -51,5 +49,5 @@ class UserPreview extends Component {
 //   actionSelectUser
 // }
 
-// export default connect(mapStateToProps, mapActionToProps)(UserPreview)
+// export default connect(null, mapActionToProps)(UserPreview)
 export default UserPreview

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Layout } from 'antd'
+import { connect } from 'react-redux';
 import SearchBox from '../SearchBox'
 import PostPreview from '../PostPreview'
 import UserPreview from '../UserPreview';
@@ -8,9 +9,8 @@ import './style.scss'
 
 const { Sider } = Layout
 
-export default class SiderBar extends Component {
+class SiderBar extends Component {
   renderByRouteRequest() {
-    console.log(this.props)
     switch (this.props.match.path) {
       case ROUTES.users:
       case ROUTES.user:
@@ -23,12 +23,12 @@ export default class SiderBar extends Component {
   }
 
   renderUsers() {
-    if (this.props.data && this.props.data.result && this.props.data._meta.success) {
-      const { result } = this.props.data
+    if (this.props.users) {
+      const { users } = this.props
       return (
         <React.Fragment>
-          {result.map((item, index) => (
-            <UserPreview {...this.props} key={'user_' + item.id} user={item} />
+          {users.map((user, index) => (
+            <UserPreview {...this.props} key={'user_' + user.id} user={user} />
           ))}
         </React.Fragment>
       )
@@ -36,7 +36,6 @@ export default class SiderBar extends Component {
   }
 
   render() {
-    console.log('sider bar')
     return (
       <Sider width={250} className='siderbar'>
         {/* Search Box */}
@@ -52,3 +51,11 @@ export default class SiderBar extends Component {
     )
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    users: state.users.users
+  }
+}
+
+export default connect(mapStateToProps)(SiderBar)

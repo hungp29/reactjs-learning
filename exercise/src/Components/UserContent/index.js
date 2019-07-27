@@ -15,7 +15,6 @@ export default class UserContent extends Component {
   }
 
   render () {
-    console.log('user content')
     return (
       <Layout className='user-content'>
         {/* Header */}

@@ -6,7 +6,6 @@ import { Tooltip } from 'antd';
 
 export default class UserPreviewTitle extends Component {
   render () {
-    console.log('User preview title')
     const { user } = this.props
     return (
       <div className='user-title'>

@@ -6,10 +6,9 @@ const { Search } = Input
 
 export default class SearchBox extends Component {
   render () {
-    console.log('Search box')
     return (
       <div className='search-box flex-center'>
-        <Search className='search-input' onSearch={value => console.log(value)} />
+        <Search className='search-input' />
       </div>
     )
   }
