@@ -1,8 +1,15 @@
-.header-content {
+.header-user {
   padding: 0;
   min-height: 80px;
   background: none;
   border-bottom: 1px solid #eceff1;
+  display: flex;
+  align-items: center;
+
+  .ant-page-header-content {
+    flex: 1 1 auto;
+    padding: 0;
+  }
 
   .circle-btn {
     &,
@@ -18,11 +25,6 @@
 
     &:not(:last-child) {
       margin-right: 10px;
-    }
-
-    &.like {
-      color: #d44a49;
-      border: 2px solid #d44a49;
     }
 
     &.prev {

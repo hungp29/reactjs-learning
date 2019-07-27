@@ -1,0 +1,51 @@
+.user-content {
+  height: 100vh;
+  padding: 0 40px;
+  background: #ffffff;
+
+  .header-content {
+    padding: 0;
+    min-height: 80px;
+    background: none;
+    border-bottom: 1px solid #eceff1;
+    display: flex;
+    align-items: center;
+
+    .ant-page-header-content {
+      flex: 1 1 auto;
+    }
+
+    .circle-btn {
+      &,
+      &:hover {
+        background: none;
+        color: #1f2a2f;
+        border: 2px solid #1f2a2f;
+        width: 27px;
+        height: 27px;
+        line-height: 25px;
+        font-size: 13px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &.prev {
+        margin-right: 10px;
+      }
+    }
+
+    .page {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    .title {
+      font-size: 31px;
+      font-weight: 700;
+      padding: 17px 0;
+      display: inline-block;
+    }
+  }
+}

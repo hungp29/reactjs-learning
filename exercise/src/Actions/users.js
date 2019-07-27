@@ -5,6 +5,7 @@ export const ACTION = {
   STATUS_START: 'START',
   STATUS_SUCCESS: 'SUCCESS',
   STATUS_ERROR: 'ERROR'
+  // SELECT_USER: 'SELECT_USER'
 }
 
 export const actionStart = () => {
@@ -33,5 +34,12 @@ export const actionRequestUsers = () => {
     Api.call(GOREST_URL + '/public-api/users', 'GET')
       .then(data => dispatch(actionSuccess(data)))
       .catch(error => dispatch(actionError(error)))
+  }
+}
+
+export const actionSelectUser = user => {
+  return {
+    type: ACTION.SELECT_USER,
+    user
   }
 }

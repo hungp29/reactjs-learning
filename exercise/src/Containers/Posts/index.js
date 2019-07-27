@@ -10,7 +10,7 @@ export default class Posts extends Component {
       // <Layout>
       //   <NavBar />
         <Layout style={{ marginLeft: 80 }}>
-          <SiderBar />
+          <SiderBar {...this.props} />
           <MainContent {...this.props} />
         </Layout>
       // </Layout>

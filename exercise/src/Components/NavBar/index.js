@@ -15,15 +15,11 @@ class NavBar extends Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      collapsed: true
-    }
+    this.state = {}
 
     if (this.props.location && this.props.location.pathname) {
       this.state.selectedKeys = this.props.location.pathname.replace('/', '')
     }
-    console.log(this.state)
-    
   }
 
   render () {
@@ -32,9 +28,9 @@ class NavBar extends Component {
       <Sider
         className='navbar'
         defaultCollapsed={defaultCollapsed}
-        collapsed={this.state.collapsed}
-        collapsedWidth={80}
-        width={200}>
+        collapsed={this.props.navbar.collapsed}
+        collapsedWidth={this.props.navbar.collapsedWidth}
+        width={this.props.navbar.width}>
         {/* Logo */}
         <div className='logo flex-center'>
           <FontAwesomeIcon className='logo-icon' icon={faSun} />
@@ -63,15 +59,15 @@ class NavBar extends Component {
   }
 }
 
-// const mapStateToProps = state => {
-//   return {
-//     currentMenu: state.app.currentMenu
-//   }
-// }
+const mapStateToProps = state => {
+  return {
+    navbar: state.app.navbar
+  }
+}
 
 // const mapActionToProps = {
 //   actionSelectMenu
 // }
 
-// export default connect(mapStateToProps, mapActionToProps)(NavBar)
-export default NavBar
+export default connect(mapStateToProps)(NavBar)
+// export default NavBar

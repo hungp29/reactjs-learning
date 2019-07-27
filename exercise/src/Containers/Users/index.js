@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import NavBar from '../../Components/NavBar'
 import MainContent from '../../Components/MainContent'
 import { actionRequestUsers } from '../../Actions/users'
+import SiderBar from '../../Components/SiderBar';
+import UserContent from '../../Components/UserContent';
 
 class Users extends Component {
   componentWillMount () {
@@ -15,8 +17,10 @@ class Users extends Component {
     return (
       // <Layout>
       //   <NavBar />
-        <Layout style={{ marginLeft: 80 }}>
+        <Layout style={{ marginLeft: this.props.navbar.collapsed ? this.props.navbar.collapsedWidth : this.props.navbar.width }}>
+          <SiderBar {...this.props} />
           <MainContent {...this.props} />
+          {/* <UserContent /> */}
         </Layout>
       // </Layout>
     )
@@ -25,6 +29,7 @@ class Users extends Component {
 
 const mapStateToProps = (state) => {
   return {
+    navbar: state.app.navbar,
     status: state.users.status,
     data: state.users.data,
     error: state.users.error
